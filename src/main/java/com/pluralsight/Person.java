@@ -1,4 +1,4 @@
-package com.pluralsight.loops;
+package com.pluralsight;
 
 /**
  * Person (Workbook 6a, Section 4-1 Collections vs Streams, Exercise 1)
