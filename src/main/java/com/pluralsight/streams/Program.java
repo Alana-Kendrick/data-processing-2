@@ -26,15 +26,16 @@ public class Program {
 
         // The result list starts empty. The loop looks at every person and
         // copies the ones that match into it
-        List<Person> matchingPeople = new ArrayList<>();
-        for (Person person : people) {
+        List<Person> matchingPeople = people.stream().filter(person -> person.getFirstName().equalsIgnoreCase(searchName)).toList();
+
+        /*for (Person person : people) {
             // A match on the first name OR on the last name counts.
             // equalsIgnoreCase: smith finds Smith
             if (person.getFirstName().equalsIgnoreCase(searchName) ||
                     person.getLastName().equalsIgnoreCase(searchName)) {
                 matchingPeople.add(person);
             }
-        }
+        }*/
 
         System.out.println("People with matching name:");
         for (Person person : matchingPeople) {
