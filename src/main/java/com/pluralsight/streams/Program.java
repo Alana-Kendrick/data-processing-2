@@ -65,7 +65,7 @@ public class Program {
         people.add(new Person("Michael", "Johnson", 35));
         people.add(new Person("Emily", "Brown", 22));
         people.add(new Person("David", "Miller", 40));
-        people.add(new Person("Sarah", "Clark", 28));
+        people.add(new Person("Olivia", "Clark", 28));
         people.add(new Person("Victor", "Anderson", 33));
         people.add(new Person("Jessica", "Wilson", 27));
         people.add(new Person("Matthew", "Martinez", 31));
