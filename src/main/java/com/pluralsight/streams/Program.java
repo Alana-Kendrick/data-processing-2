@@ -26,7 +26,9 @@ public class Program {
 
         // The result list starts empty. The loop looks at every person and
         // copies the ones that match into it
-        List<Person> matchingPeople = people.stream().filter(person -> person.getFirstName().equalsIgnoreCase(searchName)).toList();
+        List<Person> matchingPeople = people.stream().filter(person -> {
+            return (person.getFirstName().equalsIgnoreCase(searchName)) || (person.getLastName().equalsIgnoreCase(searchName));
+        }).toList();
 
         /*for (Person person : people) {
             // A match on the first name OR on the last name counts.
